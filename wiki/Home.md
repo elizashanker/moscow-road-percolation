@@ -9,3 +9,5 @@
 - [Источники](Источники)
 
 Основная версия — 27 ноября; резерв — 28–29 ноября; сдача — 16 декабря; защита — 17 декабря 2026 года.
+
+[Репозиторий](https://github.com/elizashanker/moscow-road-percolation) · [Доска и роадмап](https://github.com/users/elizashanker/projects/1)

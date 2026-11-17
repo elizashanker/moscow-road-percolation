@@ -64,7 +64,7 @@ reports/tables/         таблицы результатов
 docs/                   описание, методика, план и источники
 wiki/                   страницы для GitHub Wiki
 planning/               каталог задач и схема GitHub Projects
-.github/                шаблоны задач, pull request и проверка кода
+.github/                шаблоны задач и pull request
 ```
 
 ## Быстрый старт
