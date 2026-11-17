@@ -1,0 +1,33 @@
+[project]
+title = "Перколяция дорожной сети районов Москвы"
+internal_target = "2026-11-27"
+reserve_end = "2026-11-29"
+submission = "2026-12-16"
+defense = "2026-12-17"
+
+[experiment]
+# Стартовые настройки: уточняем после пилота.
+repetitions = 100
+master_seed = 20261118
+q_step = 0.02
+scenarios = ["random", "local"]
+retain_all_nodes = true
+directed = false
+threshold = "maximum_mean_second_component"
+
+[local_closure]
+center_sampling = "uniform_within_district_polygon"
+edge_distance = "projected_edge_midpoint_to_center"
+tie_break = "seeded_random"
+
+[[districts]]
+slug = "khamovniki"
+name = "Хамовники"
+osm_query = "район Хамовники, Москва, Россия"
+status = "selected_boundary_to_verify"
+
+[[districts]]
+slug = "basmanny"
+name = "Басманный"
+osm_query = "Басманный район, Москва, Россия"
+status = "selected_boundary_to_verify"

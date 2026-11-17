@@ -1,0 +1,28 @@
+name: Задача исследования
+description: Задача с входом, результатом и проверкой
+title: "[Задача] "
+body:
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Зачем нужна задача
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: Входные данные и зависимости
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Критерии готовности
+      description: Что проверит другая участница
+      value: "- [ ] "
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Ссылки на результат и проверку

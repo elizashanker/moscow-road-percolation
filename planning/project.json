@@ -1,0 +1,79 @@
+{
+  "repository_name": "moscow-road-percolation",
+  "visibility": "private",
+  "project_title": "Перколяция районов Москвы",
+  "fields": {
+    "Status": [
+      "Бэклог",
+      "Готово к работе",
+      "В работе",
+      "Проверка",
+      "Готово"
+    ],
+    "Направление": [
+      "Постановка",
+      "Данные",
+      "Модели и код",
+      "Эксперименты",
+      "Визуализация"
+    ],
+    "Этап": [
+      "1. Подготовка",
+      "2. Данные",
+      "3. Модели",
+      "4. Расчёты",
+      "5. Анализ",
+      "6. Основная версия",
+      "7. Расширения",
+      "8. Сдача"
+    ],
+    "Приоритет": [
+      "P0",
+      "P1",
+      "P2"
+    ],
+    "Start date": "DATE",
+    "Target date": "DATE"
+  },
+  "views": [
+    {
+      "name": "Все задачи",
+      "layout": "table",
+      "filter": "is:issue"
+    },
+    {
+      "name": "Мои задачи",
+      "layout": "table",
+      "filter": "is:issue assignee:@me"
+    },
+    {
+      "name": "Доска",
+      "layout": "board",
+      "filter": "is:issue -label:optional",
+      "columns": "Status"
+    },
+    {
+      "name": "По направлениям",
+      "layout": "board",
+      "filter": "is:issue",
+      "columns": "Направление"
+    },
+    {
+      "name": "Роадмап",
+      "layout": "roadmap",
+      "filter": "is:issue",
+      "start_field": "Start date",
+      "target_field": "Target date"
+    },
+    {
+      "name": "Блокировки",
+      "layout": "table",
+      "filter": "is:issue label:blocked"
+    },
+    {
+      "name": "Дополнительные идеи",
+      "layout": "table",
+      "filter": "is:issue label:optional"
+    }
+  ]
+}
