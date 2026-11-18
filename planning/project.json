@@ -1,6 +1,6 @@
 {
   "repository_name": "moscow-road-percolation",
-  "visibility": "private",
+  "visibility": "public",
   "project_title": "Перколяция районов Москвы",
   "fields": {
     "Status": [
@@ -36,6 +36,11 @@
     "Target date": "DATE"
   },
   "views": [
+    {
+      "name": "Можно брать",
+      "layout": "table",
+      "filter": "is:issue status:\"Готово к работе\" -label:optional"
+    },
     {
       "name": "Все задачи",
       "layout": "table",
@@ -74,6 +79,11 @@
       "name": "Дополнительные идеи",
       "layout": "table",
       "filter": "is:issue label:optional"
+    },
+    {
+      "name": "Статья",
+      "layout": "table",
+      "filter": "is:issue label:article"
     }
   ]
 }

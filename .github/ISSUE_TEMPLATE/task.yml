@@ -15,6 +15,26 @@ body:
     validations:
       required: true
   - type: textarea
+    id: steps
+    attributes:
+      label: Что сделать по шагам
+      description: Объясните так, чтобы задачу могла взять участница, которая ещё не знает деталей.
+      value: "1. \n2. \n3. "
+    validations:
+      required: true
+  - type: textarea
+    id: outputs
+    attributes:
+      label: Куда положить результат
+      description: Укажите папку, имя файла и что должно находиться внутри. Например docs/data-check.md.
+    validations:
+      required: true
+  - type: textarea
+    id: article
+    attributes:
+      label: Что из результата пойдёт в научную статью
+      description: Укажите раздел paper/manuscript.md или поясните, почему задача организационная.
+  - type: textarea
     id: acceptance
     attributes:
       label: Критерии готовности
